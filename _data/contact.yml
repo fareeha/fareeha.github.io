@@ -10,9 +10,17 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+- type: instagram
+  icon: 'fa-brands fa-instagram'
+  url: 'https://www.instagram.com/lifeasfareeha/'
+
+- type: website
+  icon: "fas fa-globe" # Use a globe icon for a website
+  url: "https://www.fareeha.ai" # Replace with your blog's URL
+
+#- type: rss
+#  icon: "fas fa-rss"
+#  noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
