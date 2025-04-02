@@ -7,14 +7,16 @@ tags: [gradio, python, ml-demos]
 
 I'm a visual thinker and learner, so finding Gradio was a game-changer.
 
-With minimal code, you can launch a web-based UI in your browser — with both a local and publicly shareable link (active for up to 72 hours). 
+With minimal code, you can launch a web-based UI in your browser — with both a local and publicly shareable link (active for up to 72 hours). This is especially useful when you want to showcase your machine learning model to teammates or stakeholders.
+
+This tutorial shows you how to create a multi-tab interactive interface using Gradio — each tab dedicated to a different AI task. We’ll build four mini-demos. Each task is self-contained, but when combined into a multi-tabbed Gradio app, they feel like a complete ML product prototype.
 
 
 ![Gradio UI with tabs for AI functions](/assets/images/gradio-tutorial-screenshot.png)
 *Uploaded image : An impromptu photoshoot with friends for my sustainable clothing label [kamli.studio](https://www.kamli.studio) in Sayulita. A local stray cat decided to join Erika mid shoot ^_^*
 
 
-Gradio has an intuitive layout organizing tasks into separate tabs with configurable rows and columns:
+Gradio’s layout API is incredibly intuitive. Here’s the base structure we use:
 
 ```python
 with gr.Blocks() as demo:
@@ -30,7 +32,8 @@ with gr.Blocks() as demo:
         with gr.Column(scale=1):  # Takes 1/3 of width
             # ...
 ```
-
+- Use `Tabs` when you have multiple tasks and want to keep the interface clean.
+- Use `Row` and `Column` to manage layout spacing and organize components horizontally and vertically.
 
 Plugs in neatly with any API:
 

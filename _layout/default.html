@@ -17,7 +17,6 @@ layout: compress
   {% include head.html %}
 
   <body>
-    {% include sidebar.html lang=lang %}
 
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column px-xxl-5">
@@ -32,18 +31,7 @@ layout: compress
             {% endif %}
           </main>
 
-          <!-- panel -->
-          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-            <div class="access">
-              {% include_cached update-list.html lang=lang %}
-              {% include_cached trending-tags.html lang=lang %}
-            </div>
 
-            {% for _include in layout.panel_includes %}
-              {% assign _include_path = _include | append: '.html' %}
-              {% include {{ _include_path }} lang=lang %}
-            {% endfor %}
-          </aside>
         </div>
 
         <div class="row">
@@ -58,7 +46,6 @@ layout: compress
           </div>
         </div>
 
-        {% include_cached search-results.html lang=lang %}
       </div>
 
       <aside aria-label="Scroll to Top">
