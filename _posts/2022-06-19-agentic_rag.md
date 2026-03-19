@@ -1,6 +1,6 @@
 ---
 title: "Creating a 🧪 Longevity & Biohacking agentic RAG using LlamaIndex"
-date: 2021-06-19
+date: 2022-06-19
 categories: [Machine Learning, Tools]
 tags: [rag, llamaindex, agent, python, ml-demos]
 ---
